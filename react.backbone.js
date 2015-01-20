@@ -15,7 +15,7 @@
 
     var collectionBehavior = {
         changeOptions: 'add remove reset sort',
-        updateScheduler: function(func) { return _.debounce(func, 0); }
+        updateScheduler: function(func) { return _.identity(func, 0); }
     };
 
     var modelBehavior = {
